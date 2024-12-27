@@ -519,7 +519,9 @@ Resources:
   NatGateway0:
     Condition: AZ0
     Type: AWS::EC2::NatGateway
-    DependsOn: AttachInternetGateway
+    DependsOn: 
+      - AttachInternetGateway
+      - NatEIP0
     Properties:
       AllocationId: !GetAtt NatEIP0.AllocationId
       SubnetId: !Ref PublicSubnet0

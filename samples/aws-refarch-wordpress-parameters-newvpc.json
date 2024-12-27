@@ -1,6 +1,6 @@
 [
-  { "ParameterKey": "AdminEmail",               "ParameterValue": "admin@test.com" },
-  { "ParameterKey": "AvailabilityZones",        "ParameterValue": "us-east-2a,us-east-2b,us-east-2c" },
+  { "ParameterKey": "AdminEmail",               "ParameterValue": "info@localstack" },
+  { "ParameterKey": "AvailabilityZones",        "ParameterValue": "ap-southeast-1a,ap-southeast-1b,ap-southeast-1c" },
   { "ParameterKey": "BastionInstanceType",      "ParameterValue": "t3.nano" },
   { "ParameterKey": "CloudFrontAcmCertificate", "ParameterValue": "" },
   { "ParameterKey": "DatabaseCmk",              "ParameterValue": "" },
@@ -54,7 +54,7 @@
   { "ParameterKey": "WPAdminPassword",          "ParameterValue": "ChangeThisPassword5678" },
   { "ParameterKey": "WPAdminUsername",          "ParameterValue": "WPAdmin" },
   { "ParameterKey": "WPDirectory",              "ParameterValue": "SiteDirectory" },
-  { "ParameterKey": "WPDomainName",             "ParameterValue": "" },
+  { "ParameterKey": "WPDomainName",             "ParameterValue": "wordpress.localstack" },
   { "ParameterKey": "WPLocale",                 "ParameterValue": "en_GB" },
   { "ParameterKey": "WPTitle",                  "ParameterValue": "This is a new WordPress site on Amazon Web Services" },
   { "ParameterKey": "WPVersion",                "ParameterValue": "latest" }
