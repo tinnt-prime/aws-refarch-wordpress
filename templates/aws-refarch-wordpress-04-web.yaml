@@ -127,7 +127,7 @@ Parameters:
     Description: The Amazon RDS master database name.
     Type: String
   ElasticFileSystem:
-    AllowedPattern: ^(fs-)([a-z0-9]{17})$
+    # AllowedPattern: ^(fs-)([a-z0-9]{17})$
     Description: The Amazon EFS file system id.
     Type: String
   EC2KeyName:
@@ -186,12 +186,12 @@ Parameters:
     Description: Specifies the minimum number of EC2 instances in the Web Autoscaling Group.
     Type: String
   WebInstanceType:
-    AllowedValues:
-    - t3.nano
-    - t3.micro
-    - t3.small
-    - t3.medium
-    - t3.large
+    # AllowedValues:
+    # - t3.nano
+    # - t3.micro
+    # - t3.small
+    # - t3.medium
+    # - t3.large
     ConstraintDescription: Must be a valid Amazon EC2 instance type.
     Default: t3.large
     Description: The Amazon EC2 instance type for your web instances.
@@ -381,8 +381,8 @@ Resources:
         - Key: Name
           Value: !Join [ '', [ 'Web ASG / ', !Ref 'AWS::StackName' ] ]
           PropagateAtLaunch: true
-      TargetGroupARNs:
-        - !Ref PublicAlbTargetGroupArn
+      # TargetGroupARNs:
+      #   - !Ref PublicAlbTargetGroupArn
       VPCZoneIdentifier:
         !If
           [ NumberOfSubnets1,
